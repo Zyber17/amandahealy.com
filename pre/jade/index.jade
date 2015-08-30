@@ -1,0 +1,24 @@
+include mixins/socialitem
+
+extends includes/wrapper
+
+//- block settings
+//- 	- var title = "";
+
+//- block head
+//- 	+css(['index','customtexture','game'])
+//- 	+js(['customtexture','game'])
+
+block content
+	#wrapper
+		header.item
+			.inner
+				h1 Amanda Healy
+				h2.lesserheading Animator, Illustrator
+
+		section#social.item
+			ul
+				+socialitem("twitter", "https://twitter.com/digitoidal", "Twitter")
+				+socialitem("instagram", "https://instagram.com/digitoid", "Instagram")
+				+socialitem("tumblr", "http://digitoid.tumblr.com/", "Tumblr")
+				//- +socialitem("mail", "mailto:amanda@amandahealy.com, "amanda@amandahealy.com")

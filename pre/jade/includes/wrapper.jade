@@ -1,0 +1,26 @@
+include ../mixins/css
+include ../mixins/favicon
+//- include ../mixins/js
+include ../mixins/googlefonts
+
+block settings
+
+doctype html
+html
+	head
+		title= (title ? title : 'Fell')
+		meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+		meta(name='viewport', content='initial-scale=1.0, maximum-scale=1.0, user-scalable=1')
+		
+		
+		link(rel='stylesheet', href="https://s3.amazonaws.com/symbolset-server/ss-social-regular.css")
+		+css(['reset','index'])
+		//- include jquery
+
+		block head
+
+		+googlefonts(['Open+Sans'])
+		
+
+	body
+		block content
